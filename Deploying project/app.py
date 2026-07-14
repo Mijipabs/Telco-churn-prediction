@@ -4,9 +4,12 @@ import joblib
 import json
 
 # Load model and feature columns
-model = joblib.load('churn_model.pkl')
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-with open('feature_columns.json', 'r') as f:
+model = joblib.load(os.path.join(BASE_DIR, 'churn_model.pkl'))
+
+with open(os.path.join(BASE_DIR, 'feature_columns.json'), 'r') as f:
     feature_columns = json.load(f)
 
 st.title('Customer Churn Prediction')
