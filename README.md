@@ -14,7 +14,7 @@ You enter a customer's details (contract type, tenure, monthly charges, services
 
 ## 🌐 Live Demo
 
-> Coming soon via Streamlit Cloud
+> https://telco-churn-olamiji.streamlit.app
 
 ---
 
